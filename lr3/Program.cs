@@ -6,11 +6,11 @@ namespace lr3
     {
         static void Main(string[] args)
         {
-            double a, b ,h, Rad;
+            double a, b ,h, Rad; // объявили высоту
             int variant;
             Console.WriteLine("1. Прямоугольник");
             Console.WriteLine("2. Круг");
-            Console.WriteLine("3. Трапеция");
+            Console.WriteLine("3. Трапеция"); // добавили фигурку
             //Console.WriteLine("4. Треугольник");
        
             //Console.WriteLine("5. Сектор");
