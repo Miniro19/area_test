@@ -6,12 +6,13 @@ namespace lr3
     {
         static void Main(string[] args)
         {
-            double a, b, Rad;
+            double a, b ,h, Rad;
             int variant;
             Console.WriteLine("1. Прямоугольник");
             Console.WriteLine("2. Круг");
-            //Console.WriteLine("3. Треугольник");
-            //Console.WriteLine("4. Трапеция");
+            Console.WriteLine("3. Трапеция");
+            //Console.WriteLine("4. Треугольник");
+       
             //Console.WriteLine("5. Сектор");
 
             string temp = Console.ReadLine();
@@ -47,6 +48,20 @@ namespace lr3
                         break;
 
                     default: Console.WriteLine("Выбор неверен "); break;
+
+                    case 3:
+                        Console.Write("Основание А = ");
+                        temp = Console.ReadLine();
+                        a = Convert.ToDouble(temp);
+                        Console.Write("Основание B = ");
+                        temp = Console.ReadLine();
+                        b = Convert.ToDouble(temp);
+                        Console.Write("Высота H = ");
+                        temp = Console.ReadLine();
+                        h = Convert.ToDouble(temp);
+                        Console.WriteLine("Площадь трапеции = " + (a + b) * h / 2);
+                        break;
+
                 }
             }
 
