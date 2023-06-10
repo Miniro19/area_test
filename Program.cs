@@ -6,13 +6,13 @@ namespace lr3
     {
         static void Main(string[] args)
         {
-            double a, b, p, c, Rad;
+            double a, b, p, c, Rad, Alpha;
             int variant;
             Console.WriteLine("1. Прямоугольник");
             Console.WriteLine("2. Круг");
             Console.WriteLine("3. Трапеция"); // добавили фигурку
             Console.WriteLine("4. Треугольник"); //добавила треугольник
-            //Console.WriteLine("5. Сектор");
+            Console.WriteLine("5. Сектор");
 
             string temp = Console.ReadLine();
 
@@ -73,6 +73,16 @@ namespace lr3
                         Console.WriteLine("Площадь треугольника = " + Math.Sqrt(p * (p - a) * (p - b) * (p - c)));
                         break;
             default: Console.WriteLine("Выбор неверен "); break;
+            
+                    case 5:
+                Console.Write("Радиус R = ");
+                temp = Console.ReadLine();
+                Rad = Convert.ToDouble(temp);
+                Console.Write("Угол сектора = ");
+                temp = Console.ReadLine();
+                Alpha = Convert.ToDouble(temp);
+                Console.WriteLine("Площадь сектора = " + Math.PI * Math.Pow(Rad, 2) * Alpha / 360);
+                break;
                 }
             }
 
